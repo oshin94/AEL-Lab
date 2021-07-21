@@ -3,203 +3,500 @@
 <title>AEL Lab</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="./static/w3-modified.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-microscope,.fa-seedling {font-size:200px}
-
-.col-container {
-    display: table; /* Make the container element behave like a table */
-    width: 100%; /* Set full-width to expand the whole page */
-}
-
-.col {
-    display: table-cell; /* Make elements inside the container behave like table cells */
-}
-
-.center {
-  line-height: 200px;
-  height: 200px;
-  text-align: center;
-}
-.center img {
-  line-height: 2;
-  display: inline-block;
-  vertical-align: middle;
-}
-.center p {
-  line-height: 1;
-  display: inline-block;
-  vertical-align: middle;
-}
-</style>
-<body>
-  
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card w3-left-align w3-opacity-min">
-    <a class="w3-bar-item w3-button w3-hide-large w3-left w3-padding-large w3-hover-white w3-xlarge w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a> -->
-    <a href="#contact" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">Contact us</a>
-    <a href="#" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">News</a>
-    <a href="#" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">Gallery</a>
-    <a href="#" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">Team</a>
-    <a href="#" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">Publications</a>
-    <a href="./templates/research.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">Research</a>
-    <a href="./templates/teaching.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">Teaching</a>
-    <a href="./templates/PI.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">PI</a>
-    <a href="#" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">Home</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-large w3-animate-top">
-    <a href="#contact" class="w3-bar-item w3-center w3-button w3-padding-large">Contact us</a>
-    <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">News</a>
-    <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">Gallery</a>
-    <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">Team</a>
-    <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">Publications</a>
-    <a href="./templates/research.html" class="w3-bar-item w3-center w3-button w3-padding-large">Research</a>
-    <a href="./templates/teaching.html" class="w3-bar-item w3-center w3-button w3-padding-large">Teaching</a>
-    <a href="./templates/PI.html" class="w3-bar-item w3-center w3-button w3-padding-large">PI</a>
-    <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">Home</a>
-  </div>
-</div>
-
-<!-- Header big size-->
-<header class="w3-container w3-white w3-border-bottom w3-border-light-grey w3-hide-small" style="padding-top:64px">
-  <div class="w3-row">
-    <div class="w3-container w3-col l2">    </div>
-    
-    <div class="w3-container w3-col l2 w3-center w3-image">
-      <img src="./img/IIT_Guwahati_Logo.png" style="max-width: 150px;">
-    </div>
-    
-    <div class="w3-container w3-col l5 w3-center">
-      <h2 class="w3-text-green">Agro-Ecotechnology Laboratory, AEL</h2>
-      <h3><i>..linking science with society..</i></h3>
-    </div>
-    
-    <div class="w3-container w3-col l2"></div>
-
-  </div>
-</header>
-
-<!-- Small size -->
-<header class="w3-container w3-white w3-border-bottom w3-border-grey w3-hide-large w3-hide-medium" style="padding-top:64px">
-    <div class="w3-row">
-      <div class="w3-container w3-col l2">    </div>
-      
-      <div class="w3-container w3-col l2 w3-center w3-image">
-        <img src="./img/IIT_Guwahati_Logo.png" style="max-width: 100px;">
-      </div>
-      
-      <div class="w3-container w3-col l5 w3-center">
-        <h4 class="w3-text-green">Agro-Ecotechnology Laboratory, AEL</h4>
-        <h4><i>..linking science with society..</i></h4>
-      </div>
-      
-      <div class="w3-container w3-col l2"></div>
-  
-    </div>
-  </header>
-
-<div class="w3-content" style="max-width: 8000px;">
-  <img class="mySlides w3-animate-left" src="./img/slider1.jpg" style="width:100%">
-  <img class="mySlides w3-animate-left" src="./img/slider2.jpg" style="width:100%">
-</div>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2500);    
-}
-</script>
-
-<!-- First Grid -->
 <script src="./static/awesome-icons.js"></script>
-<div class="w3-row-padding w3-container" style="padding-top: 64px;">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>ABOUT LAB</h1>
-      <h5 class="w3-padding-32">The central focus of the Agro-ecotechnology laboratory (AEL) is the dynamic integration of the knowledge culled from the field and laboratory.</h5>
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif
+    }
 
-      <p class="w3-text-grey">This amalgamation is being used to accelerate the development and customization of affordable, efficient and sustainable solutions. A cardinal balance of technological and human factors is essential for the transformation of this amalgamation in to viable outcomes. This vision is translated into the driving principle of the AEL lab “linking science and technology with society”.</p>
+    .w3-bar,
+    h1,
+    button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-microscope,
+    .fa-seedling {
+        font-size: 200px
+    }
+
+    .col-container {
+        display: table;
+        /* Make the container element behave like a table */
+        width: 100%;
+        /* Set full-width to expand the whole page */
+    }
+
+    .col {
+        display: table-cell;
+        /* Make elements inside the container behave like table cells */
+    }
+
+    .center {
+        line-height: 200px;
+        height: 200px;
+        text-align: center;
+    }
+
+    /* .center img {
+        line-height: 2;
+        display: inline-block;
+        vertical-align: middle;
+    } */
+
+    .center p {
+        line-height: 1;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    div.nav {
+        font-size: 13px;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top" style="background-color: green;">
+        <div class="nav w3-bar w3-white w3-card w3-left-align w3-opacity-min w3-bold">
+            <a class="w3-bar-item w3-button w3-hide-large w3-left w3-padding-large w3-hover-white w3-xlarge w3-white"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a> -->
+            <!-- <a href="#contact"
+                class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">Contact
+                us</a> -->
+            <a href="#contact"
+                class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"><b>About
+                    us</b></a>
+            <a href="#"
+                class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"><b>News</b></a>
+            <a href="#"
+                class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"><b>Gallery</b></a>
+            <a href="#"
+                class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"><b>Team</b></a>
+            <a href="#"
+                class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"><b>Publications</b></a>
+            <a href="./templates/research.html"
+                class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"><b>Research</b></a>
+            <a href="./templates/teaching.html"
+                class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"><b>Teaching</b></a>
+            <a href="./templates/PI.html"
+                class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"><b>PI</b></a>
+            <a href="#"
+                class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"><b>Home</b></a>
+            <a class="w3-bar-item w3-left w3-hide-small w3-hide-medium w3-padding-large">Call
+                Us:<i class='fas fa-phone'></i> +91 123-4567890 | <i class="fa fa-envelope"></i> abc@iitg.ac.in</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-large w3-animate-top">
+            <a href="#contact" class="w3-bar-item w3-center w3-button w3-padding-large">Contact us</a>
+            <a href="#contact" class="w3-bar-item w3-center w3-button w3-padding-large">About us</a>
+            <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">News</a>
+            <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">Gallery</a>
+            <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">Team</a>
+            <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">Publications</a>
+            <a href="./templates/research.html" class="w3-bar-item w3-center w3-button w3-padding-large">Research</a>
+            <a href="./templates/teaching.html" class="w3-bar-item w3-center w3-button w3-padding-large">Teaching</a>
+            <a href="./templates/PI.html" class="w3-bar-item w3-center w3-button w3-padding-large">PI</a>
+            <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">Home</a>
+        </div>
     </div>
 
-    <div class="w3-third w3-center">
-      <i class="fas fa-seedling w3-padding-64 w3-text-green"></i>
-    </div>
-  </div>
-</div>
+    <!-- Header big size-->
+    <header class="w3-container w3-white w3-border-bottom w3-border-light-grey w3-hide-small" style="padding-top:64px">
+        <div class="w3-row">
+            <div class="w3-container w3-col l2"> </div>
 
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-microscope w3-padding-64 w3-text-blue w3-margin-right"></i>
+            <div class="w3-container w3-col l2 w3-center w3-image">
+                <img src="./img/IIT_Guwahati_Logo.png" style="max-width: 150px;">
+            </div>
+
+            <div class="w3-container w3-col l5 w3-center">
+                <h2 class="w3-text-green">Agro-Ecotechnology Laboratory, AEL</h2>
+                <h3><i>..linking science with society..</i></h3>
+            </div>
+
+            <div class="w3-container w3-col l2"></div>
+
+        </div>
+    </header>
+
+    <!-- Small size -->
+    <header class="w3-container w3-white w3-border-bottom w3-border-grey w3-hide-large w3-hide-medium"
+        style="padding-top:64px">
+        <div class="w3-row">
+            <div class="w3-container w3-col l2"> </div>
+
+            <div class="w3-container w3-col l2 w3-center w3-image">
+                <img src="./img/IIT_Guwahati_Logo.png" style="max-width: 100px;">
+            </div>
+
+            <div class="w3-container w3-col l5 w3-center">
+                <h4 class="w3-text-green">Agro-Ecotechnology Laboratory, AEL</h4>
+                <h4><i>..linking science with society..</i></h4>
+            </div>
+
+            <div class="w3-container w3-col l2"></div>
+
+        </div>
+    </header>
+
+    <div class="w3-content w3-display-container" style="max-width:inherit">
+        <img class="mySlides w3-animate-fading" src="./img/slider1.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="./img/slider2.jpg" style="width:100%">
+        <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)"><b>&#10094;</b></button>
+        <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+            style="width:100%">
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        </div>
     </div>
 
-    <div class="w3-twothird">
-      <h1>Research Areas</h1>
-      <ul style="list-style-type: circle;">
-        <li>Biochar & Bio-fertilizers development</li>
-        <li>Crop production and productivity</li>
-        <li>Converting agricultural wastes in to useful products</li>
-        <li>Natural Resources Management through watershed based approaches</li>
-        <li>Soil Pollution studies and its management</li>
-        <li>Research on greenhouse gases emission from Agriculture sector and its adaptation and mitigation options.</li>
-        <li>Climate Change-V&A at the community level</li>
-        <li>Disaster Risk Reduction and community-based coping strategies</li>
-      </ul>
-    </div>
-  </div>
-</div>
+    <!-- First Grid -->
 
-<!-- <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <div class="w3-row-padding w3-container" style="padding: 32px;">
+
+        <div class="w3-third">
+            <div class="w3-panel w3-card">
+                <h1>News</h1>
+                <h6 class="w3-padding-16  w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <h6 class="w3-padding-16 w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic
+                    integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <h6 class="w3-padding-16 w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic
+                    integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <div class="w3-bar w3-center">
+                    <a href="#" class="w3-button w3-hover-purple w3-border w3-round-xxlarge">«</a>
+                    <a href="#" class="w3-button w3-hover-orange w3-border w3-round-xxlarge">»</a>
+                </div>
+
+            </div>
+            <button class="w3-button w3-green w3-round-xxlarge">View All</button>
+        </div>
+
+
+        <div class="w3-third">
+            <div class="w3-panel w3-card">
+                <h1>Events</h1>
+                <h6 class="w3-padding-16  w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <h6 class="w3-padding-16 w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic
+                    integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <h6 class="w3-padding-16 w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic
+                    integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <div class="w3-bar w3-center">
+                    <a href="#" class="w3-button w3-hover-purple w3-border w3-round-xxlarge">«</a>
+                    <a href="#" class="w3-button w3-hover-orange w3-border w3-round-xxlarge">»</a>
+                </div>
+
+            </div>
+            <button class="w3-button w3-green w3-round-xxlarge">View All</button>
+        </div>
+        <div class="w3-third">
+            <div class="w3-panel w3-card">
+                <h1>Notifications</h1>
+                <h6 class="w3-padding-16  w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <h6 class="w3-padding-16 w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic
+                    integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <h6 class="w3-padding-16 w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic
+                    integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <div class="w3-bar w3-center">
+                    <a href="#" class="w3-button w3-hover-purple w3-border w3-round-xxlarge">«</a>
+                    <a href="#" class="w3-button w3-hover-orange w3-border w3-round-xxlarge">»</a>
+                </div>
+
+            </div>
+            <button class="w3-button w3-green w3-round-xxlarge">View All</button>
+        </div>
+
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-container"
+        style="padding: 32px; background-image: url(./img/background.png); background-repeat: no-repeat; background-size:cover; background-color: #f4fcf7;">
+
+        <div class="w3-half">
+            <div class="w3-panel w3-card w3-white">
+                <h1>News</h1>
+                <h6 class="w3-padding-16  w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <h6 class="w3-padding-16 w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic
+                    integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <h6 class="w3-padding-16 w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic
+                    integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <div class="w3-bar w3-center">
+                    <a href="#" class="w3-button w3-hover-purple w3-border w3-round-xxlarge">«</a>
+                    <a href="#" class="w3-button w3-hover-orange w3-border w3-round-xxlarge">»</a>
+                </div>
+
+            </div>
+            <button class="w3-button w3-green w3-round-xxlarge">View All</button>
+        </div>
+
+
+        <div class="w3-half">
+            <div class="w3-panel w3-card w3-white">
+                <h1>Recent Publications</h1>
+                <h6 class="w3-padding-16  w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <h6 class="w3-padding-16 w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic
+                    integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <h6 class="w3-padding-16 w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic
+                    integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <div class="w3-bar w3-center">
+                    <a href="#" class="w3-button w3-hover-purple w3-border w3-round-xxlarge">«</a>
+                    <a href="#" class="w3-button w3-hover-orange w3-border w3-round-xxlarge">»</a>
+                </div>
+
+            </div>
+            <button class="w3-button w3-green w3-round-xxlarge">View All</button>
+        </div>
+    </div>
+
+    <!-- Third Grid -->
+    <div class="w3-row-padding w3-container" style="padding: 32px;">
+
+        <div class="w3-half">
+            <div class="w3-panel w3-card w3-content">
+                <h1>Gallery</h1>
+                <h6 class="w3-padding-16  w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <h6 class="w3-padding-16 w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic
+                    integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <h6 class="w3-padding-16 w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic
+                    integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <div class="w3-bar w3-center">
+                    <a href="#" class="w3-button w3-hover-purple w3-border w3-round-xxlarge">«</a>
+                    <a href="#" class="w3-button w3-hover-orange w3-border w3-round-xxlarge">»</a>
+                </div>
+
+            </div>
+            <button class="w3-button w3-green w3-round-xxlarge">View All</button>
+        </div>
+
+
+        <div class="w3-half">
+            <div class="w3-panel w3-card">
+                <h1>Events</h1>
+                <h6 class="w3-padding-16  w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <h6 class="w3-padding-16 w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic
+                    integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <h6 class="w3-padding-16 w3-border-bottom">The central focus of the Agro-ecotechnology laboratory (AEL)
+                    is the dynamic
+                    integration of the knowledge culled from the field and laboratory.
+                    <br>
+                    <i class='fas fa-calendar-alt'> 01/01/1111</i>
+                </h6>
+                <div class="w3-bar w3-center">
+                    <a href="#" class="w3-button w3-hover-purple w3-border w3-round-xxlarge">«</a>
+                    <a href="#" class="w3-button w3-hover-orange w3-border w3-round-xxlarge">»</a>
+                </div>
+
+            </div>
+            <button class="w3-button w3-green w3-round-xxlarge">View All</button>
+        </div>
+    </div>
+    <!-- <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
     <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
 </div> -->
 
-<!-- Footer -->
-<footer id="contact" class="w3-container w3-padding-top-32 w3-center w3-green">  
-  <h1>Contact us:</h1>
-  <div class="w3-xlarge w3-padding-32 w3-text-white">
-    Indian Institute of Technology Guwahati<br>
-    School of Agro and Rural Technology<br>
-    Surjyamukhi Road, North, Amingaon<br>
-    Guwahati, Assam 781039<br><br>
-    Email: <a href="mailto: sudipmitra@iitg.ac.in"  target="_blank">sudipmitra@iitg.ac.in</a>
-    
- </div>
- <div class="w3-light-green">
-  <p>Designed and developed by <a href="oshin94.github.io" target="_blank">Arnab Paul Choudhury</a></p>
- </div>
-</footer>
+    <!-- Footer -->
+    <footer id="contact" class="w3-container" style="background-color: #0a5510; color: white;">
+        <div style="padding-left:32px; padding-right: 32px;">
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+            <div class="w3-quarter">
+
+                <h3>Department Resources</h3>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 4</li>
+                <li>Item 3</li>
+
+            </div>
+
+            <div class="w3-quarter">
+
+                <h3>Important Links</h3>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 4</li>
+                <li>Item 3</li>
+
+            </div>
+
+            <div class="w3-quarter">
+
+                <h3>Quick Links</h3>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 4</li>
+                <li>Item 3</li>
+
+            </div>
+
+            <div class="w3-quarter">
+                <h3>Contact Us</h3>
+                Agro-Ecotechnology Lab<br>
+                IIT Guwahati<br>
+                abc@iitg.ac.in<br>
+                0123-456712</li>
+            </div>
+        </div>
+    </footer>
+    <div class="w3-center" style="background-color: #014606; color: white;">© Agro-Ecotechnology Lab , Indian Institute
+        of Technology
+        Guwahati, All rights
+        reserved. Designed by APC</div>
+
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
+        }
+    </script>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000);
+        }
+    </script>
 
 </body>
+
 </html>
