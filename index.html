@@ -13,6 +13,7 @@
 <script src="./static/awesome-icons.js"></script>
 
 
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -230,7 +231,7 @@
         </div>
     </div>
     <!-- First Grid -->
-    <div style="background-color: #e4fde6;">
+    <div style="background-image: url(./img/background3.jpg); background-attachment: fixed;">
         <div class="w3-row-padding w3-container w3-margin-bottom"
             style="padding-left: 30px; padding-right: 30px; margin-left:auto;margin-right:auto;max-width:1215px">
 
@@ -271,7 +272,7 @@
             </div>
 
             <div class="w3-half" style="background-color: #f4fcf7;">
-                <div class="w3-panel w3-card">
+                <div class="w3-panel w3-card right2left">
                     <h2 style="background-color: rgb(158, 255, 255);"> <i class="fa fa-bell" style='color:grey'></i>
                         Events
                         and
@@ -361,7 +362,7 @@
     <!-- Second Grid -->
     <div class="w3-row-padding w3-container" style="padding: 32px; background-image: url(./img/background2.jpg); box-shadow: inset 0 0 5em 1em rgb(33, 88, 45); background-repeat: no-repeat;background-size:cover; background-color: #f4fcf7; background-attachment: fixed; ">
         <div class="w3-half">
-            <div class="w3-panel w3-card w3-white">
+            <div class="w3-panel w3-card w3-white fade">
                 <h2 style="background-color: rgb(158, 255, 255);"> <i class="fa fa-newspaper-o"></i> News</h2>
                 <div id="ContentNews" class="carousel slide w3-hide-small" data-ride="carousel"
                         style="margin-left: 80px; margin-right: 80px;" data-interval="0">
@@ -513,7 +514,7 @@
 
 
         <div class="w3-half">
-            <div class="w3-panel w3-card w3-white">
+            <div class="w3-panel w3-card w3-white fade">
                 <h2 style="background-color: rgb(158, 255, 255);"> <i class="fa fa-bell" style='color:grey'></i> Recent Publications</h2>
                 <div id="ContentPublications" class="carousel slide w3-hide-small" data-ride="carousel"
                         style="margin-left: 80px; margin-right: 80px;" data-interval="0">
@@ -668,11 +669,11 @@
     <h2 class="w3-row-padding w3-margin-top" style="padding-left: 42px; background-color: rgb(158, 255, 255);"> <i
             class="fa fa-image" style="color:grey"></i> Gallery
     </h2>
-    <div style="background-color: #e4fde6;">
+    <div style="background-image: url(./img/background3.jpg); background-attachment: fixed;">
         <div class="w3-row w3-container custom-flex w3-margin-bottom w3-content"
             style="padding-left: 42px; padding-right: 42px; background-color: #ffffff;">
 
-            <div class="w3-col s6 m4 l4 w3-margin-bottom w3-border fade" style="transition: width 1s; ">
+            <div class="w3-col s6 m4 l4 w3-margin-bottom w3-border fade">
                 <div class="w3-container">
                     <img src="./img/gallery/Becoming Lead Fellow in Mexico.jpg" style="width:100%">
 
@@ -805,17 +806,18 @@
                 $(".fade").each(function() {
                 /* Check the location of each desired element */
                 var objectBottom = $(this).offset().top + $(this).outerHeight();
-                
+                var objectTop = $(this).offset().top;
                 /* If the element is completely within bounds of the window, fade it in */
-                if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-                    console.log("In View");
+                if (objectBottom-((objectBottom-objectTop)/1.25) < windowBottom) { //object comes into view (scrolling down)
                     if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-                } else { //object goes out of view (scrolling up)
+                } 
+                else { //object goes out of view (scrolling up)
                     if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
                 }
                 });
             }).scroll(); //invoke scroll-handler on page-load
         });
+        
         
     </script>
 
