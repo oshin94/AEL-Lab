@@ -116,6 +116,10 @@
     .dots.active{
         background-color: green;
     }
+    html {
+        scroll-behavior: smooth;
+    }
+
 </style>
 
 <body>
@@ -129,40 +133,45 @@
             
             <a href="#" class="w3-button float-left w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
                 style="text-decoration:none;"><b>Home</b></a>
-
-            <a href="#" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
-                style="text-decoration:none"><b>News</b></a>
-            <a href="#" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
-                style="text-decoration:none"><b>Gallery</b></a>
+            
+            <a href="./templates/PI.html" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
+                style="text-decoration:none;"><b>PI</b></a>
+            
+            <a href="./templates/teaching.html" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
+                style="text-decoration:none"><b>Teaching</b></a>
+            
+            <a href="./templates/research.html" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
+                style="text-decoration:none"><b>Research</b></a>
+            
+            <a href="#publications" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
+                style="text-decoration:none;"><b>Publications</b></a>
+            
             <a href="#" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
                 style="text-decoration:none;"><b>Team</b></a>
-            <a href="#" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
-                style="text-decoration:none;"><b>Publications</b></a>
-            <a href="./templates/research.html"
-                class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
-                style="text-decoration:none"><b>Research</b></a>
-            <a href="./templates/teaching.html"
-                class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
-                style="text-decoration:none"><b>Teaching</b></a>
-            <a href="./templates/PI.html"
-                class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
-                style="text-decoration:none"><b>PI</b></a>
+            
+            <a href="#gallery" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
+                style="text-decoration:none"><b>Gallery</b></a>
 
+            <a href="#news" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
+                style="text-decoration:none"><b>News</b></a>
+            
+                <a href="#contact" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
+                style="text-decoration:none"><b>Contact Us</b></a>
 
         </div>
 
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-large w3-animate-top"
-            style="background-color: #4de65a;">
-            <a href="#contact" class="w3-bar-item w3-center w3-button w3-padding-large">Contact us</a>
-            <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">News</a>
-            <a href="#" class="w3-bar-item w3-center w3-white w3-button w3-padding-large">Gallery</a>
-            <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">Team</a>
-            <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">Publications</a>
-            <a href="./templates/research.html" class="w3-bar-item w3-center w3-button w3-padding-large">Research</a>
-            <a href="./templates/teaching.html" class="w3-bar-item w3-center w3-button w3-padding-large">Teaching</a>
-            <a href="./templates/PI.html" class="w3-bar-item w3-center w3-button w3-padding-large">PI</a>
+            style="background-color: #4de65a;">       
             <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">Home</a>
+            <a href="./templates/PI.html" class="w3-bar-item w3-center w3-button w3-padding-large">PI</a>
+            <a href="./templates/teaching.html" class="w3-bar-item w3-center w3-button w3-padding-large">Teaching</a>
+            <a href="./templates/research.html" class="w3-bar-item w3-center w3-button w3-padding-large">Research</a>
+            <a href="#publications" class="w3-bar-item w3-center w3-button w3-padding-large">Publications</a>
+            <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">Team</a>
+            <a href="#gallery" class="w3-bar-item w3-center w3-white w3-button w3-padding-large">Gallery</a>
+            <a href="#news" class="w3-bar-item w3-center w3-button w3-padding-large">News</a>
+            <a href="#contact" class="w3-bar-item w3-center w3-button w3-padding-large">Contact us</a>
         </div>
     </div>
 
@@ -552,7 +561,7 @@
 
     <!-- Second Grid -->
     <div class="w3-row-padding w3-container" style="padding: 32px; background-image: url(./img/background2-min-blur.jpg); background-size: cover; background-attachment: fixed;"> 
-        <div class="w3-half">
+        <div id="news" class="w3-half">
             <div class="w3-panel w3-card w3-white fade" >
                 <!-- style="box-shadow: 0 0 2em 1em #20b62f;" -->
                 <h2 style="background-color: rgb(158, 255, 255);"> <i class="fa fa-newspaper-o"></i> News</h2>
@@ -755,7 +764,7 @@
         </div>
 
 
-        <div class="w3-half">
+        <div id="publications" class="w3-half">
             <div class="w3-panel w3-card w3-white fade">
                 <!-- style="box-shadow: 0em 0em 1em 1em #20b62f;" -->
                 <h2 style="background-color: rgb(158, 255, 255);"> <i class="fa fa-bell" style='color:grey'></i> Recent Publications</h2>
@@ -959,7 +968,7 @@
     </div>
 
     <!-- Third Grid -->
-    <h2 class="w3-row-padding w3-margin-top" style="padding-left: 42px; background-color: rgb(158, 255, 255);"> <i
+    <h2 id="gallery" class="w3-row-padding w3-margin-top" style="padding-left: 42px; background-color: rgb(158, 255, 255);"> <i
             class="fa fa-image" style="color:grey"></i> Gallery
     </h2>
     <div style="background-image: url(./img/background3-blur.jpg); background-attachment: fixed;">
