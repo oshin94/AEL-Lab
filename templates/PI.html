@@ -3,176 +3,549 @@
 <title>AEL Lab</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../static/w3-modified.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-group{font-size:200px}
-
-</style>
-<body>
-  
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card w3-left-align w3-opacity-min">
-    <a class="w3-bar-item w3-button w3-hide-large w3-left w3-padding-large w3-hover-white w3-xlarge w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a> -->
-    <a href="./contact.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">Contact us</a>
-    <a href="./news.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">News</a>
-    <a href="./gallery.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">Gallery</a>
-    <a href="./team.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">Team</a>
-    <a href="./publications.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">Publications</a>
-    <a href="./research.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">Research</a>
-    <a href="./teaching.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">Teaching</a>
-    <a href="#" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">PI</a>
-    <a href="../index.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green">Home</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-large">
-    <a href="./contact.html" class="w3-bar-item w3-center w3-button w3-padding-large">Contact us</a>
-    <a href="./news.html" class="w3-bar-item w3-center w3-button w3-padding-large">News</a>
-    <a href="./gallery.html" class="w3-bar-item w3-center w3-button w3-padding-large">Gallery</a>
-    <a href="./team.html" class="w3-bar-item w3-center w3-button w3-padding-large">Team</a>
-    <a href="./publications.html" class="w3-bar-item w3-center w3-button w3-padding-large">Publications</a>
-    <a href="./research.html" class="w3-bar-item w3-center w3-button w3-padding-large">Research</a>
-    <a href="./teaching.html" class="w3-bar-item w3-center w3-button w3-padding-large">Teaching</a>
-    <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">PI</a>
-    <a href="../index.html" class="w3-bar-item w3-center w3-button w3-padding-large">Home</a>
-  </div>
-</div>
-
-<!-- Header big size-->
-<header class="w3-container w3-white w3-border-bottom w3-border-light-grey w3-hide-small" style="padding-top:64px">
-  <div class="w3-row">
-    <div class="w3-container w3-col l2">    </div>
-    
-    <div class="w3-container w3-col l2 w3-center w3-image">
-      <img src="../img/IIT_Guwahati_Logo.png" style="max-width: 150px;">
-    </div>
-    
-    <div class="w3-container w3-col l5 w3-center">
-      <h2 class="w3-text-green">Agro-Ecotechnology Laboratory, AEL</h2>
-      <h3><i>..linking science with society..</i></h3>
-    </div>
-    
-    <div class="w3-container w3-col l2"></div>
-
-  </div>
-</header>
-
-<!-- Small size -->
-<header class="w3-container w3-white w3-border-bottom w3-border-grey w3-hide-large w3-hide-medium" style="padding-top:64px">
-    <div class="w3-row">
-      <div class="w3-container w3-col l2">    </div>
-      
-      <div class="w3-container w3-col l2 w3-center w3-image">
-        <img src="../img/IIT_Guwahati_Logo.png" style="max-width: 100px;">
-      </div>
-      
-      <div class="w3-container w3-col l5 w3-center">
-        <h4 class="w3-text-green">Agro-Ecotechnology Laboratory, AEL</h4>
-        <h4><i>..linking science with society..</i></h4>
-      </div>
-      
-      <div class="w3-container w3-col l2"></div>
-  
-    </div>
-</header>
-
-<!-- First Grid -->
 <script src="../static/awesome-icons.js"></script>
 
-<div class="w3-row-padding w3-container">
-  <h2 class="w3-center w3-border-top w3-border-grey w3-blue w3-text-white">Principal Investigator</h2>
-  <div class="w3-content">
-    <div class="w3-third w3-center w3-hide-small w3-hide-medium" style="padding-right: 16px;">
-        <img class="w3-image w3-circle" src="../img/smitra.jfif" style="max-width: 250px;">
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-microscope,
+    .fa-seedling {
+        font-size: 200px
+    }
+
+    .col-container {
+        display: table;
+        /* Make the container element behave like a table */
+        width: 100%;
+        /* Set full-width to expand the whole page */
+    }
+
+    .col {
+        display: table-cell;
+        /* Make elements inside the container behave like table cells */
+    }
+
+    .center {
+        line-height: 200px;
+        height: 200px;
+        text-align: center;
+    }
+
+    .center p {
+        line-height: 1;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    div.nav {
+        font-size: 15.5px;
+    }
+
+    .w3-badge {
+        height: 13px;
+        width: 13px;
+        padding: 0
+    }
+
+    .w3-row.custom-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .w3-row.custom-flex.flex>.w3-col {
+        flex: 1 0 290px;
+    }
+
+    .w3-row-padding.custom-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .w3-row-padding.custom-flex.flex>.w3-col {
+        flex: 1 0 290px;
+    }
+
+    .fade {
+        opacity: 1;
+    }
+
+    .dots{
+        border-style: solid;
+        border-width: thin;
+    }
+    .dots.active{
+        background-color: green;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    .carousel-control-prev.slideshow:hover{
+        background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(255, 255, 255));
+    }
+
+    .carousel-control-next.slideshow:hover{
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 255, 255));
+    }
+
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top" style="z-index: 9999;">
+        <div class="nav w3-green">
+            <a class="w3-button w3-right w3-hide-large w3-hover-green w3-xlarge" href="javascript:void(0);" itle="Toggle Navigation Menu"  style="text-decoration:none"><i id="menu" class="fa fa-bars" onclick=myFunction() style="background-color: #03800e; padding: 5px;"></i>&nbsp;&nbsp;&nbsp;<i class='fas fa-phone' style="font-size: 15px; text-decoration:none;"> +91 123-4567890 </i>| <i class="fa fa-envelope" style="font-size: 15px;text-decoration:none;"> abc@iitg.ac.in </i> </a>
+            <a class="w3-hide-small w3-hide-medium w3-padding-large float-lg-right" style="text-decoration:none;">Call
+                Us: <i class='fas fa-phone'></i> +91 123-4567890 | <i class="fa fa-envelope"></i> abc@iitg.ac.in</a>
+            
+                <a href="../index.html" class="w3-button float-left w3-hide-small w3-hide-medium w3-padding-large w3-hover-light-green"
+                style="text-decoration:none;"><b>Home</b></a>
+            
+            <a href="#" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-light-green"
+                style="text-decoration:none;"><b>Profile</b></a>
+            
+            <!-- <a href="./templates/teaching.html" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
+                style="text-decoration:none"><b>Teaching</b></a> -->
+            
+            <a href="../templates/research.html" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-light-green"
+                style="text-decoration:none"><b>Research</b></a>
+            
+            <a href="#publications" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-light-green"
+                style="text-decoration:none;"><b>Publications</b></a>
+            
+            <a href="#" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-light-green"
+                style="text-decoration:none;"><b>Team</b></a>
+            
+            <a href="#gallery" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-light-green"
+                style="text-decoration:none"><b>Gallery</b></a>
+
+            <a href="#news" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-light-green"
+                style="text-decoration:none"><b>News</b></a>
+            
+                <a href="#contact" class="w3-button w3-right w3-hide-small w3-hide-medium w3-padding-large w3-hover-light-green"
+                style="text-decoration:none"><b>Contact Us</b></a>
+
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-large w3-animate-top"
+            style="background-color: #4de65a;">       
+            <a href="../index.html" class="w3-bar-item w3-center w3-button w3-padding-large">Home</a>
+            <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">Profile</a>
+            <a href="../templates/research.html" class="w3-bar-item w3-center w3-button w3-padding-large">Research</a>
+            <a href="../templates/publications.html" class="w3-bar-item w3-center w3-button w3-padding-large">Publications</a>
+            <a href="#" class="w3-bar-item w3-center w3-button w3-padding-large">Team</a>
+            <a href="#gallery" class="w3-bar-item w3-center w3-white w3-button w3-padding-large">Gallery</a>
+            <a href="#news" class="w3-bar-item w3-center w3-button w3-padding-large">News</a>
+            <a href="#contact" class="w3-bar-item w3-center w3-button w3-padding-large">Contact us</a>
+        </div>
     </div>
 
-    <!-- medium screen -->
-    <div class="w3-third w3-center w3-hide-small w3-hide-large" style="padding-right: 16px;">
-      <img class="w3-image w3-circle" src="../img/smitra.jfif" style="max-width: 230px;">
-  </div>
+    <!-- Header big size-->
+    <header class="w3-container w3-white w3-border-bottom w3-border-light-grey w3-hide-small" style="padding-top:64px;">
+        <div class="w3-row">
+            <div class="w3-container w3-col l2"> </div>
 
-    <!-- small screen -->
-    <div class="w3-third w3-center w3-hide-large w3-hide-medium">
-        <img class="w3-image w3-circle" src="../img/smitra.jfif" style="max-width: 200px;">
+            <div class="w3-container w3-col l2 w3-center w3-image">
+                <img src="../img/IIT_Guwahati_Logo.png" style="max-width: 150px;">
+            </div>
+
+            <div class="w3-container w3-col l5 w3-center">
+                <h2 class="w3-text-green"><b>Agro-Ecotechnology Laboratory, AEL</b></h2>
+                <h3><i>..linking science with society..</i></h3>
+            </div>
+
+            <div class="w3-container w3-col l2"></div>
+
+        </div>
+    </header>
+
+    <!-- Small size -->
+    <header class="w3-container w3-white w3-border-bottom w3-border-grey w3-hide-large w3-hide-medium" style="padding-top: 64px;">
+        <div class="w3-row">
+            <div class="w3-container w3-col l2"></div>
+
+            <div class="w3-container w3-col l2 w3-center w3-image">
+                <img src="../img/IIT_Guwahati_Logo.png" style="max-width: 100px;">
+            </div>
+
+            <div class="w3-container w3-col l5 w3-center">
+                <h4 class="w3-text-green"><b>Agro-Ecotechnology Laboratory AEL</h4>
+                <h6><i>..linking science with society..</i></h6>
+            </div>
+
+            <!-- <div class="w3-container w3-col l2"></div> -->
+
+        </div>
+    </header>
+
+    <h2 class="w3-center" style="background-color: rgb(158, 255, 255);"> Profile </h2>
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-container">
+      <div class="w3-content ">
+        <div class="w3-quarter w3-padding">
+            <img class="w3-image w3-border" src="../img/smitra.jfif" style="padding: 10px;"> 
+        </div>
+        <div class="w3-threequarter">
+          <h2 class="w3-border-bottom w3-border-orange"> Dr. Sudip Mitra, MNASc </h2>
+          <h6 style="padding-top: 1px; line-height: 1.2;">
+            <b>Head</b><br>
+            Centre for Disaster Management & Research<br>
+
+            <b>Associate Professor</b><br>
+            School of Agro & Rural Technology<br><br>
+
+            Fulbright Fellow, UC Davis, USA<br>
+
+            Indian Institute of Technology Guwahati (IITG)<br>
+
+            Email: <a href="mailto:sudipmitra@iitg.ac.in">sudipmitra@iitg.ac.in</a> / <a href="mailto:sudipmitra@yahoo.com">sudipmitra@yahoo.com</a><br>
+            
+            Profile: <a href="https://www.iitg.ac.in/crt/sudip_mitra/">https://www.iitg.ac.in/crt/sudip_mitra/</a>
+
+          </h6>
+        </div>
+      </div>
+
     </div>
-    <div class="w3-twothird w3-padding-32">
-      <h5 class="w3-light-grey">
-        Dr. Sudip Mitra, MNASc<br>
-        Head, Centre for Disaster Management & <br>
-        Associate Professor, School of Agro & Rural Technology<br>
-        Fulbright Fellow, UC Davis, USA<br>        
-        Indian Institute of Technology Guwahati (IITG)<br>        
-        Email: <a href="mailto: sudipmitra@iitg.ac.in">sudipmitra@iitg.ac.in</a> / <a href="mailto: sudipmitra@yahoo.com">sudipmitra@yahoo.com</a><br>
-        Profile: <a href="https://www.iitg.ac.in/crt/sudip_mitra/" target="_blank">https://www.iitg.ac.in/crt/sudip_mitra/</a>
-      </h5><br>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-container w3-light-grey">
+      <div class="w3-content">
+        <div class="w3-quarter w3-padding">
+            <h2 style="border-bottom: 2px solid rgb(247, 111, 58); width: 200px">Categories</h2>
+            <ul style="list-style: none;margin-left: 0;padding-left: 1em;text-indent: -1em;">
+              <li><span style="color:red;">»</span>&nbsp; <a href="#collapseEdu"> Educational Details</a></li><br>
+              <li><span style="color:red;">»</span> &nbsp; <a href="#collapseAHS"> Awards/ Honors/ Scholarships</a></li><br>
+              <li><span style="color:red;">»</span> &nbsp; <a href="#collapseIT"> Invited Talks</a></li><br>
+              <li><span style="color:red;">»</span> &nbsp; <a href="#collapseTeach"> Teaching</a></li><br>
+              <li><span style="color:red;">»</span> &nbsp; <a href="#collapseAR"> Administrative Responsibilities</a></li><br>
+              <li><span style="color:red;">»</span> &nbsp; <a href="#collapseLM"> Life membership</a></li><br>
+            </ul> 
+        </div>
+
+        
+        <div class="w3-threequarter w3-border w3-padding">
+
+          <!-- Education -->
+          <h3 class="w3-round-large" href="#collapseEdu" data-toggle="collapse" style="background-color: #baf5ba; cursor:pointer;" onclick="changeIcon('butn1')";> Educational Details <i id="butn1" class=" fa fa-angle-double-up w3-right w3-padding" style="font-size: 20px"></i> 
+          </h3>
+          <h6 class="collapse show" id="collapseEdu" style="padding-top: 1px; line-height: 1.2;">
+            <div class="w3-row-padding w3-padding-16">
+              <div class="w3-quarter">
+                <b>1996-2000:</b>
+              </div>
+              <div class="w3-threequarter">
+                Ph.D. from Indian Agricultural Research Institute (IARI), New Delhi, India. First Class Degree and selected for Jawaharlal Nehru Memorial Trust Scholarship for carrying out the PhD thesis research at the International Rice Research Institute (IRRI), Manila, Philippines
+              </div>
+            </div>
+
+            <div class="w3-row-padding w3-padding-16">
+              <div class="w3-quarter">
+                <b>1994-1996:</b>
+              </div>
+              <div class="w3-threequarter">
+                M.Sc. from Indian Agricultural Research Institute (IARI), New Delhi, First Class Degree
+              </div>
+            </div>
+
+            <div class="w3-row-padding w3-padding-16">
+              <div class="w3-quarter">
+                <b>1990–1994:</b>
+              </div>
+              <div class="w3-threequarter">
+                B.Sc. (Hons) Agriculture, First Class Degree, Visva-Bharati, Santiniketan, India
+              </div>
+            </div>
+          </h6>
+
+          <!-- Awards/ honors/ Scholarships -->
+          <h3 class="w3-round-large" href="#collapseAHS" data-toggle="collapse" style="background-color: #baf5ba; cursor:pointer;" onclick="changeIcon('butn2')";> Awards/ Honors/ Scholarships <i id="butn2" class=" fa fa-angle-double-up w3-right w3-padding" style="font-size: 20px"></i> 
+          </h3>
+          <h6 class="collapse show" id="collapseAHS" style="padding-top: 1px; line-height: 1.2;">
+            <div class="w3-row-padding w3-padding-16">
+              <div class="w3-quarter">
+                <b>1996-2000:</b>
+              </div>
+              <div class="w3-threequarter">
+                Ph.D. from Indian Agricultural Research Institute (IARI), New Delhi, India. First Class Degree and selected for Jawaharlal Nehru Memorial Trust Scholarship for carrying out the PhD thesis research at the International Rice Research Institute (IRRI), Manila, Philippines
+              </div>
+            </div>
+
+            <div class="w3-row-padding w3-padding-16">
+              <div class="w3-quarter">
+                <b>1994-1996:</b>
+              </div>
+              <div class="w3-threequarter">
+                M.Sc. from Indian Agricultural Research Institute (IARI), New Delhi, First Class Degree
+              </div>
+            </div>
+
+            <div class="w3-row-padding w3-padding-16">
+              <div class="w3-quarter">
+                <b>1990–1994:</b>
+              </div>
+              <div class="w3-threequarter">
+                B.Sc. (Hons) Agriculture, First Class Degree, Visva-Bharati, Santiniketan, India
+              </div>
+            </div>
+          </h6>
+
+          <!-- Invited Talks -->
+          <h3 class="w3-round-large" href="#collapseIT" data-toggle="collapse" style="background-color: #baf5ba; cursor:pointer;" onclick="changeIcon('butn3')";> Invited Talks <i id="butn3" class=" fa fa-angle-double-up w3-right w3-padding" style="font-size: 20px"></i> 
+          </h3>
+          <h6 class="collapse show" id="collapseIT" style="padding-top: 1px; line-height: 1.2;">
+            <div class="w3-row-padding w3-padding-16">
+              <div class="w3-quarter">
+                <b>1996-2000:</b>
+              </div>
+              <div class="w3-threequarter">
+                Ph.D. from Indian Agricultural Research Institute (IARI), New Delhi, India. First Class Degree and selected for Jawaharlal Nehru Memorial Trust Scholarship for carrying out the PhD thesis research at the International Rice Research Institute (IRRI), Manila, Philippines
+              </div>
+            </div>
+
+            <div class="w3-row-padding w3-padding-16">
+              <div class="w3-quarter">
+                <b>1994-1996:</b>
+              </div>
+              <div class="w3-threequarter">
+                M.Sc. from Indian Agricultural Research Institute (IARI), New Delhi, First Class Degree
+              </div>
+            </div>
+
+            <div class="w3-row-padding w3-padding-16">
+              <div class="w3-quarter">
+                <b>1990–1994:</b>
+              </div>
+              <div class="w3-threequarter">
+                B.Sc. (Hons) Agriculture, First Class Degree, Visva-Bharati, Santiniketan, India
+              </div>
+            </div>
+          </h6>
+
+        <!-- Teaching -->
+        <h3 class="w3-round-large" href="#collapseTeach" data-toggle="collapse" style="background-color: #baf5ba; cursor:pointer;" onclick="changeIcon('butn4')";> Teaching <i id="butn4" class=" fa fa-angle-double-up w3-right w3-padding" style="font-size: 20px"></i> 
+        </h3>
+        <h6 class="collapse show" id="collapseTeach" style="padding-top: 1px; line-height: 1.2;">
+          <div class="w3-row-padding w3-padding-16">
+            <div class="w3-quarter">
+              <b>1996-2000:</b>
+            </div>
+            <div class="w3-threequarter">
+              Ph.D. from Indian Agricultural Research Institute (IARI), New Delhi, India. First Class Degree and selected for Jawaharlal Nehru Memorial Trust Scholarship for carrying out the PhD thesis research at the International Rice Research Institute (IRRI), Manila, Philippines
+            </div>
+          </div>
+
+          <div class="w3-row-padding w3-padding-16">
+            <div class="w3-quarter">
+              <b>1994-1996:</b>
+            </div>
+            <div class="w3-threequarter">
+              M.Sc. from Indian Agricultural Research Institute (IARI), New Delhi, First Class Degree
+            </div>
+          </div>
+
+          <div class="w3-row-padding w3-padding-16">
+            <div class="w3-quarter">
+              <b>1990–1994:</b>
+            </div>
+            <div class="w3-threequarter">
+              B.Sc. (Hons) Agriculture, First Class Degree, Visva-Bharati, Santiniketan, India
+            </div>
+          </div>
+        </h6>
+
+        <!-- AR -->
+        <h3 class="w3-round-large" href="#collapseAR" data-toggle="collapse" style="background-color: #baf5ba; cursor:pointer;" onclick="changeIcon('butn5')";> Administrative Responsibilities <i id="butn5" class=" fa fa-angle-double-up w3-right w3-padding" style="font-size: 20px"></i> 
+        </h3>
+        <h6 class="collapse show" id="collapseAR" style="padding-top: 1px; line-height: 1.2;">
+          <div class="w3-row-padding w3-padding-16">
+            <div class="w3-quarter">
+              <b>1996-2000:</b>
+            </div>
+            <div class="w3-threequarter">
+              Ph.D. from Indian Agricultural Research Institute (IARI), New Delhi, India. First Class Degree and selected for Jawaharlal Nehru Memorial Trust Scholarship for carrying out the PhD thesis research at the International Rice Research Institute (IRRI), Manila, Philippines
+            </div>
+          </div>
+
+          <div class="w3-row-padding w3-padding-16">
+            <div class="w3-quarter">
+              <b>1994-1996:</b>
+            </div>
+            <div class="w3-threequarter">
+              M.Sc. from Indian Agricultural Research Institute (IARI), New Delhi, First Class Degree
+            </div>
+          </div>
+
+          <div class="w3-row-padding w3-padding-16">
+            <div class="w3-quarter">
+              <b>1990–1994:</b>
+            </div>
+            <div class="w3-threequarter">
+              B.Sc. (Hons) Agriculture, First Class Degree, Visva-Bharati, Santiniketan, India
+            </div>
+          </div>
+        </h6>
+
+        <!-- Invited Talks -->
+        <h3 class="w3-round-large" href="#collapseLM" data-toggle="collapse" style="background-color: #baf5ba; cursor:pointer;" onclick="changeIcon('butn6')";> Life Membership <i id="butn6" class=" fa fa-angle-double-up w3-right w3-padding" style="font-size: 20px"></i> 
+        </h3>
+        <h6 class="collapse show" id="collapseLM" style="padding-top: 1px; line-height: 1.2;">
+          <div class="w3-row-padding w3-padding-16">
+            <div class="w3-quarter">
+              <b>1996-2000:</b>
+            </div>
+            <div class="w3-threequarter">
+              Ph.D. from Indian Agricultural Research Institute (IARI), New Delhi, India. First Class Degree and selected for Jawaharlal Nehru Memorial Trust Scholarship for carrying out the PhD thesis research at the International Rice Research Institute (IRRI), Manila, Philippines
+            </div>
+          </div>
+
+          <div class="w3-row-padding w3-padding-16">
+            <div class="w3-quarter">
+              <b>1994-1996:</b>
+            </div>
+            <div class="w3-threequarter">
+              M.Sc. from Indian Agricultural Research Institute (IARI), New Delhi, First Class Degree
+            </div>
+          </div>
+
+          <div class="w3-row-padding w3-padding-16">
+            <div class="w3-quarter">
+              <b>1990–1994:</b>
+            </div>
+            <div class="w3-threequarter">
+              B.Sc. (Hons) Agriculture, First Class Degree, Visva-Bharati, Santiniketan, India
+            </div>
+          </div>
+        </h6>
+
+
+        </div>
+      </div>
+
     </div>
-  </div>
-</div>
-<div class="w3-row-padding w3-container" style="padding-bottom: 64px;">
-    <div class="w3-content">
-        <h2>Experiences</h2>
-        <p class="w3-text-grey">Since Jan 2017 Dr. Sudip Mitra is an Associate Professor at the Indian Institute of Technology (IIT) Guwahati, Assam. Prior to this, he has served as regular faculty at various institutes/universities viz. Tezpur (Central) University, Assam; Jawaharlal Nehru University (JNU), New Delhi; National Institute of Disaster Management (NIDM), New Delhi. Post PhD, since 2000, Dr. Mitra has been working in the fields of natural resources management, livelihood, climate change (Vulnerability & Adaptation) and greenhouse gases management in agriculture sector.<br><br>
-        Earlier, he has worked in various National and International Organisations viz. M S Swaminathan Research Foundation (MSSRF), Chennai; The Energy and Resources Institute (TERI) and TERI University; Division of Ecology and Natural Resources at the Centre for Development Research (ZEF), University of Bonn, Germany etc. Dr. Mitra also worked as a team member in one special international project coordinated by the Inter Academy Council-Amsterdam, the Netherlands. This project studied the Science and Technology Strategies for Improving Agricultural Productivity, Food Security and Environment in Africa and was carried out on request of then UN Secretary General Mr. Kofi Annan. Dr. Mitra has many years of experience in working with farmers and village communities and plays a significant role in connecting science & technology with society.<br><br>
-        As a Fulbright Scholar (2012), he carried out a short study on greenhouse gas modeling for Californian rice ecosystem at University of California, Davis, USA, under the mentor-ship of Prof. Johan Six. His works in the field of agriculture and rural development has been recognized by Lead India and he has been inducted as a Fellow of Lead India.</p>
-    </div>
-  </div>
 
-
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-group w3-padding-64 w3-text-blue w3-margin-right"></i>
-    </div>
-
-    <div class="w3-twothird">
-      <h1>Member of Task Forces/Technical committees:</h1>
-      <ul style="list-style-type: circle;">
-        <li>Member of experts' committee on Global Technology Watch Group (Sustainable Agriculture), DST-TIFAC, Government of India (2017-)</li>
-        <li>Task Force Member of MNREGA convergence of schemes under Ministry of Rural Development, Government of India (2008)</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-</div> -->
-
-<!-- Footer -->
-<footer id="contact" class="w3-container w3-padding-top-32 w3-center w3-green">  
-  <h1>Contact us:</h1>
-  <div class="w3-xlarge w3-padding-32 w3-text-white">
-    Indian Institute of Technology Guwahati<br>
-    School of Agro and Rural Technology<br>
-    Surjyamukhi Road, North, Amingaon<br>
-    Guwahati, Assam 781039<br><br>
-    Email: <a href="mailto: sudipmitra@iitg.ac.in"  target="_blank">sudipmitra@iitg.ac.in</a>
     
- </div>
- <div class="w3-light-green">
-  <p>Designed and developed by <a href="oshin94.github.io" target="_blank">Arnab Paul Choudhury</a></p>
- </div>
-</footer>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+
+    <!-- Footer -->
+    <footer id="contact" class="w3-container" style="background-color: #1b1b1b; color: white;">
+        <div class="w3-center w3-content">
+            <div class="w3-quarter w3-left-align">
+                <h4><b>Contact Us</b></h4>
+                <p><i class='fas fa-map-marker-alt'></i> &nbsp;&nbsp;&nbsp;Agro-Ecotechnology
+                    Lab<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IIT
+                    Guwahati<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guwahati 781039<br>
+                    <i class='fa fa-envelope'></i> &nbsp;&nbsp;abc@iitg.ac.in<br>
+                    <i class='fas fa-phone'></i> &nbsp;&nbsp;0123-456712</li>
+                </p>
+
+            </div>
+
+            <div class="w3-quarter w3-left-align">
+
+                <h4><b>Department Resources</b></h4>
+                <li><a href="#" class="w3-button">Item 1</a></li>
+                <li><a href="#" class="w3-button">Item 2</a></li>
+                <li><a href="#" class="w3-button">Item 4</a></li>
+                <li><a href="#" class="w3-button">Item 3</a></li>
+
+            </div>
+
+            <div class="w3-quarter w3-left-align">
+
+                <h4><b>Important Links</b></h4>
+                <li><a href="#" class="w3-button">Item 1</a></li>
+                <li><a href="#" class="w3-button">Item 2</a></li>
+                <li><a href="#" class="w3-button">Item 4</a></li>
+                <li><a href="#" class="w3-button">Item 3</a></li>
+
+            </div>
+
+            <div class="w3-quarter w3-left-align">
+
+                <h4><b>Quick Links</b></h4>
+                <li><a href="#" class="w3-button">Item 1</a></li>
+                <li><a href="#" class="w3-button">Item 2</a></li>
+                <li><a href="#" class="w3-button">Item 4</a></li>
+                <li><a href="#" class="w3-button">Item 3</a></li>
+
+            </div>
+        </div>
+    </footer>
+    <div class="w3-center" style="background-color: #000000; color: white;">© Agro-Ecotechnology Lab , Indian Institute
+        of Technology
+        Guwahati, All rights
+        reserved. Designed by APC</div>
+
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                var y = document.getElementById("menu");
+                y.classList.remove("fa", "fa-bars");
+                y.classList.add("fa", "fa-close");
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                var y = document.getElementById("menu");
+                y.classList.remove("fa", "fa-close");
+                y.classList.add("fa", "fa-bars");
+            }
+        }
+    </script>
+
+    <script>
+      function changeIcon(elem){
+        var x = document.getElementById(elem);
+        if (x.className.indexOf("fa fa-angle-double-down") == -1){
+          x.className = x.className.replace(" fa fa-angle-double-up", "");
+          x.className += " fa fa-angle-double-down";
+          console.log("1");
+        }
+        else{
+          x.className = x.className.replace(" fa fa-angle-double-down", "");
+          x.className += " fa fa-angle-double-up";
+          console.log("2");
+        }
+      }
+    </script>
 
 </body>
+
 </html>
